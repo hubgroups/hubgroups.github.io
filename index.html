@@ -1,0 +1,75 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Transportation, Logistics & Supply Chain Solutions | Hub Group</title>
+
+<meta name="description" content="Hub Group delivers robust end-to-end supply chain solutions designed to meet your unique business needs and tailored to the specific nuances of your industry." />
+
+</title>
+
+<body>
+
+<style>
+
+center{margin:1em; background-color:linen;font-size:1.888em; border-radius:1rem; padding:1em;font-family: Arial; text-shadow: 2px 2px 3px #f1f1f1; box-shadow:-4px 4px 15px 8px black;}
+
+center:hover{padding-top: 2em;box-shadow: 8px 10px 4px -4px gray;}
+
+</style>
+
+
+
+<center>
+
+WE'VE GOT A BETTER ROUTE FOR YOUR EXPRESS SERVICES,<br><br>
+
+Update Ends In...<hr> <small id="cdTimer"></small><hr/>
+
+</center>
+
+
+
+<script>var cdt=document.getElementById("cdTimer");
+
+ var tt = new Date().getTime();
+
+  var countDownDate = Math.floor(tt+(1000*60*60*48));
+
+  var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  
+
+  var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+  var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  var s = Math.floor((distance % (1000 * 60)) / 1000);
+
+  cdt.innerHTML = d +' D : '+ h +'  H : '+ m +' M : '+ s +' S';
+
+   if (distance < 0) {
+
+     cdt.innerHTML = 'Loading.....';
+
+     clearInterval(x);
+
+   }
+
+ }, 70);
+
+</script>
+
+</body>
+
+</html>
